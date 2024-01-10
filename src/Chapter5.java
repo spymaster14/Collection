@@ -12,8 +12,7 @@ public class Chapter5 {
 		list.add(new Task(LocalDate.of(2021, 8, 10), "散髪に行く。"));
 		list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く。"));
 
-		List<Task> lines = list;
-		lines.sort(Comparator.comparing(Task::getDate));
+		list.sort(Comparator.comparing(Task::getDate));
 
 		for (Task sort : list) {
 			System.out.println(sort);
